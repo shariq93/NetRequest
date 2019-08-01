@@ -12,7 +12,7 @@ First set BASE_URL in Api.js file
     async sendRequest() {
        let endPoint  =  "getListOfSomethings"
         try {
-	    	let resp  =  await  api.get(url)
+	    	let resp  =  await  api.get(endPoint)
     	    alert(JSON.stringify(resp))
         } catch (error) {
     	    alert(error)
@@ -25,7 +25,7 @@ First set BASE_URL in Api.js file
         let endPoint  =  "getListOfSomethings"
         let params  =  "param1=VALUE1&param2=VALUE2"
         try {
-    	    let resp  =  await  api.get(url,param)
+    	    let resp  =  await  api.get(endPoint,params)
     	    alert(JSON.stringify(resp))
         } catch (error) {
     	    alert(error)
@@ -40,7 +40,7 @@ First set BASE_URL in Api.js file
         let endPoint  =  "Login"
         let params  =  "username=Jhondoe&pass=abc123"
         try {
-    	    let resp  =  await  api.post(url,param)
+    	    let resp  =  await  api.post(endPoint,params)
     	    alert(JSON.stringify(resp))
         } catch (error) {
     	    alert(error)
