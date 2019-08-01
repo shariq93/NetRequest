@@ -4,7 +4,7 @@ It's a promise based wrapper of **XML Request** in Javascript
 EXAMPLE
 First set BASE_URL in Api.js file
 
-    let  BASE_URL  =  "http://www.example.com/api"
+    let  BASE_URL  =  "http://www.example.com/api/"
    
   Now for `GET` Request without Params
   
